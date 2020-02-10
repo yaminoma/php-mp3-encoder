@@ -1,0 +1,14 @@
+[package]
+name = "mp3encoder"
+version = "0.1.0"
+authors = ["Shumpei Urabe <urabe@meteor.ne.jp>"]
+edition = "2018"
+
+[dependencies]
+libmp3lame-sys = { git = "https://github.com/yaminoma/libmp3lame-sys.git" }
+num-rational = "0.2.3"
+hound = "3.4.0"
+
+[lib]
+name = "mp3encoder"
+crate-type = ["dylib"]
